@@ -1,0 +1,45 @@
+@import '../base/variables.scss';
+@import '../base/extends.scss';
+
+.navBack {
+    background-color: $bg-h1;
+    border: 3px double darken(goldenrod, 10%);
+}
+
+.containerHead {
+    @extend %flex;
+    padding: 10px 0;
+}
+
+.headerLogo {
+    margin-top: 6px;
+}
+
+h1 {
+    font-family: $font-fam;
+    font-style: italic;
+    font-weight: bolder;
+    color: $color-letter;
+}
+
+.itemsBackgrounds {
+    background-color: $bg-menu;
+}
+
+.myFont {
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: $font-fam;
+    color: $color-letter;
+    font-size: 20px;
+    font-weight: bolder;
+    &:hover {
+        color: goldenrod;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,36 @@
+@import '../base/extends.scss';
+footer {
+    border: 3px solid black;
+    background-color: rgba(218, 165, 32, 0.856); 
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+    font-family: $font-fam;
+}
+
+h3 {
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.redesUl, .cardBox {
+    @extend %flex;
+    flex-wrap: wrap;
+}
+
+.fab {
+    font-size: 2rem;
+    color: black;
+    padding: 0 10px;
+    transition: 0.2s;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+

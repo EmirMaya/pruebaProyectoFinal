@@ -1,0 +1,102 @@
+@import '../base/maps.scss';
+@import '../base/mixins.scss';
+@import '../base/extends.scss';
+main {
+    margin-top: 30px;
+}
+
+.iconContainer {
+    margin: 50px auto;
+    @extend %flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 85%; 
+    background-color: $bg-sec;
+}
+
+.iconBox {
+    padding: 2rem;
+    display: flex;
+    align-items: center;    
+}
+
+.textIcon {
+    color: $color-letter;
+    text-align: center;
+    padding-top: 18px;
+    font-family: $font-fam;
+}
+
+.productBox {
+    margin: 40px auto;
+    background-color: $bg-sec;
+   @extend %flex;
+}
+
+.product {
+    color: $bg-h1;
+    padding: 50px 0;
+    @extend %flex;
+    font-family: $font-fam;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.3s;
+    :hover {
+    background-image: linear-gradient(to top,rgba(214, 153, 0, 0.616) , rgba(110, 110, 101, 0.596));
+    }
+}
+
+.cardBack {
+    background-color: map-get($productos , bg-prod);
+    border:map-get($productos , border-prod );
+    border-radius: 5px;   
+}
+
+.buttomBack {
+    padding: 4px 12px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    font-family: $font-fam;
+    text-decoration: none;
+    color: $bg-h1;
+    &:hover {
+        color: $bg-h1;
+    }
+    @include buttoms;
+}
+
+.sectionTwo {
+    margin: 45px 0;
+    padding: 50px;
+    background-color: $bg-sec;
+}
+
+
+h2 {
+    font-family: $font-fam;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+.title {
+    font-size: 38px;
+}
+
+.title, .paragraph {
+    color: $color-letter;
+}
+
+.paragraph {
+    font-family: $font-fam;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.map {
+    padding: 30px 0;
+    @extend %flex;
+}
+
+
+
